@@ -72,6 +72,13 @@ class _FeedState extends State<Feed> {
         appBar: AppBar(
           centerTitle: true,
           title: Text("Bienvenido"),
+          actions: [
+            IconButton(
+                onPressed: () {
+                  setState(() {});
+                },
+                icon: Icon(Icons.arrow_circle_down))
+          ],
         ),
         body: Column(
           children: [
